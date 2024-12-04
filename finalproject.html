@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB-115 Final Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="image-center">
+    <img src="banner2.png" alt="Build your meal plan banner" id="banner">
+  </header>
+
+  <main>
+    <form id="mealPlanForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="goal">Weekly Goal:</label>
+        <input id="goal" name="goal" rows="2" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Meal Plan</legend>
+        <div class="day-inputs">
+          <h4>This Week's Meal Plan</h4>
+          <label>Breakfast:</label> <input type="text" name="mondayBreakfast"><br>
+          <label>Snack:</label> <input type="text" name="mondaySnack"><br>
+          <label>Lunch:</label> <input type="text" name="mondayLunch"><br>
+          <label>Snack:</label> <input type="text" name="mondaySnack2"><br>
+          <label>Dinner:</label> <input type="text" name="mondayDinner"><br>
+        
+        </div>
+      </fieldset>
+
+      <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+      <button type="reset">Clear Planner</button>
+      <button type="button" onclick="printPlanner()">Print Planner</button>
+      <button type="button" onclick="downloadPlanner()">Download Planner</button>
+    </form>
+  </main>
+
+  <script src="projectJS.js"></script>
+</body>
+</html>
