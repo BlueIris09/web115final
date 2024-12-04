@@ -1,0 +1,44 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    padding: 0;
+    background-color: #7b7be9;
+  }
+  
+  header img {
+   
+   width: 50%;
+    height: auto;
+    margin-left: 25%;
+  }
+  
+  header h1 {
+    color: #333;
+  }
+  
+  form {
+    background: #e3daff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
